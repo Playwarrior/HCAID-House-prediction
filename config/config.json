@@ -1,0 +1,6 @@
+{
+  "DATABASE_NAME": "root",
+  "DATABASE_PASSWORD": "password",
+  "DATABASE_SERVER": "localhost",
+  "PORT": 3306
+}
