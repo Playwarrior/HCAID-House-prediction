@@ -1,0 +1,9 @@
+<application>
+  <component name="StudioSettings">
+    <option name="generalSettings">
+      <GeneralSettings>
+        <option name="macAddress" value="02-00-4C-4F-4F-50" />
+      </GeneralSettings>
+    </option>
+  </component>
+</application>
