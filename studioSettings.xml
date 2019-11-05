@@ -20,5 +20,12 @@
         </option>
       </SdkSettings>
     </option>
+    <option name="webEngineSettings">
+      <WebEngineSettings>
+        <option name="nativePath" value="C:\Users\robin\.WebStorm2019.1\system\studio_cef_native" />
+        <option name="version" value="1.0.0" />
+        <option name="engineType" value="WEBVIEW" />
+      </WebEngineSettings>
+    </option>
   </component>
 </application>
