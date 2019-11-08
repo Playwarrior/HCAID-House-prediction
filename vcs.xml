@@ -10,6 +10,10 @@
           <option name="url" value="https://gitlab.com/scrumproject-avans/electron-front-end.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://gitlab.com/playwarrior/angular-gitlab-heroku.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\robin\WebstormProjects" />
