@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="*.js.flow" type="Flow" />
+      <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
       <mapping pattern="MockData" type="TypeScript" />
     </extensionMap>
   </component>
