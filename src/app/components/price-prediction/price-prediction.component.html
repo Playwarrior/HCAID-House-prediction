@@ -1,0 +1,72 @@
+<div class="row" style="border-top: 0">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <mat-card style="height: 305px; border-top: 0">
+      <mat-card-title style="align-content: center">
+        <div style="text-align: center; font-size: 2em; margin-top: 10px">Prediction</div>
+      </mat-card-title>
+      <mat-card-content class="text-center">
+        <br/>
+        The price of your house came out to be <br /> <br/>
+        <br/>
+        <p style="font-size: 3em; font-style: italic; font-weight: bold">$ {{this.result}}</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="row">
+          <div class="col text-center">
+            <div class="form-group">
+              <button routerLink="/prediction" mat-raised-button color="default">Try another house!</button>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <br/>
+  <div class="col-md-3"></div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-3">
+    <mat-card>
+      <mat-card-title class="text-center">
+        Why is my so house worth so little?
+      </mat-card-title>
+      <mat-card-content>
+        The price of a house is dependent on many factors some the program is not taking into account. In this algorithm we have used a few basic features of a house that determine most of the price.
+        Neighbourhood and other facilities can also increase the value of a property but is not taken into account. This algorithm only makes an estimation and tries to resemble reality.
+        For a more accurate estimation try contacting a real estate agent.
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-3">
+    <mat-card>
+      <mat-card-title class="text-center">
+        Why can't I put in a smaller number than 370 square feat?
+      </mat-card-title>
+      <mat-card-content>
+        This is because why are trying to predict house values and not apartments. These have been filtered out of the dataset. That's why we have set a limit to how little your square feet can be.
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-3">
+    <mat-card>
+      <mat-card-title class="text-center">
+        How do I know that this accurate?
+      </mat-card-title>
+      <mat-card-content>
+        This algorithm is trained using the dataset you can find <a href="https://www.kaggle.com/shree1992/housedata">here</a>. A <a>research</a> of the dataset concluded that there was a strong correlation between the price and the information we asked from you.
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3"></div>
+  </div>
