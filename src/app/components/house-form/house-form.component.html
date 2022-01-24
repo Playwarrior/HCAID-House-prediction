@@ -1,0 +1,116 @@
+<div>
+  <div class="container">
+    <div class="form-card" style="border-top-right-radius: 0; border-top-left-radius: 0">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <form [formGroup]="testInputForm" (ngSubmit)="testInputForm.valid && onSubmit()">
+            <mat-card class="form-card-content" [class.mat-elevation-z2]="true">
+              <mat-card-content>
+                <h2 class="text-center">Please fill in the form to predict the price of your house!</h2>
+              </mat-card-content>
+
+              <div class="row">
+                <div class="col">
+                  <mat-card-content class="form-card-content">
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-5 align-content-center">
+                        <div class="form-group align-content-center">
+                          <mat-form-field appearance="fill">
+                            <mat-label>How many bedrooms does your house have?</mat-label>
+                            <input class="input-field-number" matInput step="1" type="number"
+                                   formControlName="bedrooms"/>
+                            <mat-error *ngIf="testInputForm.get('bedrooms')!.errors">The amount of bedrooms is invalid!
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                          <mat-form-field appearance="fill">
+                            <mat-label>How many bathrooms does your house have?</mat-label>
+                            <input class="input-field-number" matInput step="1" type="number"
+                                   formControlName="bathrooms"/>
+                            <mat-error *ngIf="testInputForm.get('bathrooms')!.errors">The amount of bathrooms is
+                              invalid!
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                          <mat-form-field appearance="fill">
+                            <mat-label>How many square feet does your house take up?</mat-label>
+                            <input class="input-field-number" matInput step="1" type="number"
+                                   formControlName="sqft_living"/>
+                            <mat-error *ngIf="testInputForm.get('sqft_living')!.errors">The amount of square feet is
+                              invalid!
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                          <div>
+                            <mat-label>Is your house adjacent to a body of water like a river, lake or sea?</mat-label>
+                          </div>
+                          <div class="btn-box">
+                            <mat-radio-group formControlName="waterfront"
+                                             aria-label="Water adjacent">
+                              <br/>
+                              <mat-radio-button value="1">Yes</mat-radio-button>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <mat-radio-button value="0">No</mat-radio-button>
+                            </mat-radio-group>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 align-content-center">
+                        <div class="form-group">
+                          <mat-form-field appearance="fill">
+                            <mat-label>How many square feet does your upstairs take up?</mat-label>
+                            <input class="input-field-number" matInput step="1" type="number"
+                                   formControlName="sqft_above"/>
+                            <mat-error *ngIf="testInputForm.get('sqft_above')!.errors">The amount of square feet is
+                              invalid!
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+
+                        <div class="form-group">
+                          <mat-form-field appearance="fill">
+                            <mat-label>How many square feet does your basement take up?</mat-label>
+                            <input class="input-field-number" matInput step="1" type="number"
+                                   formControlName="sqft_basement"/>
+                            <mat-error *ngIf="testInputForm.get('sqft_basement')!.errors">The amount of square feet is
+                              invalid!
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+
+                        <div class="form-group">
+                          <mat-form-field appearance="fill">
+                            <mat-label>How many floors does your house have?</mat-label>
+                            <input class="input-field-number" matInput step="1" type="number" formControlName="floors"/>
+                            <mat-error *ngIf="testInputForm.get('floors')!.errors">The amount of floors is invalid!
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                  </mat-card-content>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <div class="form-group">
+                    <button (click)="onSubmit()" mat-raised-button color="accent" [disabled]="!testInputForm.valid">
+                      Predict your price!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </mat-card>
+          </form>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </div>
+</div>
